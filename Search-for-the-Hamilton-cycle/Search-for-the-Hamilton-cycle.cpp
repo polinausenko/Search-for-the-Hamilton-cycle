@@ -66,3 +66,12 @@ public:
         }
         return true;
     }
+    bool add_free(int* D, int nvert) {
+        for (int i = 0; i < size; i++) {
+            if (D[i] == 0) {
+                D[i] = nvert;
+                return true;
+            }
+        }
+        return false;
+    }
