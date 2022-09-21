@@ -1,2 +1,3 @@
 ﻿  Search-for-the-Hamilton-cycle.cpp
-C:\Users\Полина\OneDrive\Рабочий стол\git_practice\Search-for-the-Hamilton-cycle\Search-for-the-Hamilton-cycle\Search-for-the-Hamilton-cycle.cpp(20): fatal  error C1075: "{": не найдена несоответствующая лексема
+C:\Users\Полина\OneDrive\Рабочий стол\git_practice\Search-for-the-Hamilton-cycle\Search-for-the-Hamilton-cycle\Search-for-the-Hamilton-cycle.cpp(115,16): warning C4101: j: неиспользованная локальная переменная
+  Search-for-the-Hamilton-cycle.vcxproj -> C:\Users\Полина\OneDrive\Рабочий стол\git_practice\Search-for-the-Hamilton-cycle\x64\Debug\Search-for-the-Hamilton-cycle.exe

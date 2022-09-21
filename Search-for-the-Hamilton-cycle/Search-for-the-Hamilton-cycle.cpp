@@ -111,3 +111,28 @@ public:
             D[k] = 0;
         }
     }
+    void solve() {
+        int i, j;
+        int* D = new int[size + 1];
+        for (i = 0; i < size + 1; i++) {
+            D[i] = 0;
+        }
+
+        solve_step(D, 0, 0);
+
+    }
+
+
+};
+
+int main()
+{
+    system("chcp 1251");
+    system("cls");
+    setlocale(LC_ALL, "Russian_Russia.1251");
+
+    gamelt_cycle a;
+    a.solve();
+
+    system("pause");
+}
