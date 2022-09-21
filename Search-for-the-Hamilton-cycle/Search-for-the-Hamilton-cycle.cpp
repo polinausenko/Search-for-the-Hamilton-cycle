@@ -75,3 +75,10 @@ public:
         }
         return false;
     }
+    void del_last(int* D, int k) {
+        for (int i = 0; i < size + 1; i++) {
+            if (i > k) {
+                D[i] = 0;
+            }
+        }
+    }
