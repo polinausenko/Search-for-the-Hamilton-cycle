@@ -82,3 +82,32 @@ public:
             }
         }
     }
+    void solve_step(int* D, int i, int k) {
+        int j;
+
+        if (check_vert(D, i + 1)) {
+            D[k] = i + 1;
+            for (j = 0; j < size; j++) {
+                if (mat[i][j] != 0) {
+                    solve_step(D, j, k + 1);
+                    del_last(D, k);
+                }
+            }
+        }
+        else {
+            D[k] = i + 1;
+            if (D[0] == D[size]) {
+
+                cout << "\nS = {";
+                for (j = 0; j < k + 1; j++) {
+                    if (D[j] != 0) {
+                        cout << D[j] << " ";
+                    }
+                }
+                cout << "}\n";
+
+                return;
+            }
+            D[k] = 0;
+        }
+    }
