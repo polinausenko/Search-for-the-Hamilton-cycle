@@ -54,3 +54,15 @@ public:
                         }
                     }
                 }
+            }
+        }
+    }
+
+    bool check_vert(int* D, int nvert) {
+        for (int i = 0; i < size; i++) {
+            if (D[i] == nvert) {
+                return false;
+            }
+        }
+        return true;
+    }
